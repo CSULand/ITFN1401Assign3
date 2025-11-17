@@ -1,0 +1,43 @@
+/* ---------- Theme Tokens ---------- */
+:root{
+  --gold:#e6c37f;
+  --brown:#3b2f2f;
+  --cream:#f4f1de;
+  --green:#3b604b;
+  --black:#1e1a16;
+
+  --bg:var(--cream);
+  --text:var(--brown);
+  --radius:12px;
+  --shadow:0 6px 24px rgba(30,26,22,.18);
+}
+
+/* ---------- Base ---------- */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:'EB Garamond', serif;
+  font-size:18px;
+  line-height:1.6;
+  color:var(--text);
+  background:var(--bg);
+}
+img{max-width:100%;display:block}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{width:min(1200px,92vw);margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+
+/* ---------- Header / Nav ---------- */
+.site-header{
+  position:sticky; top:0; z-index:10;
+  background:var(--black); color:var(--cream);
+  border-bottom:1px solid rgba(230,195,127,.15);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.logo{
+  font-family:'Cinzel',serif; font-weight:700; letter-spacing:.08em;
+  color:var(--gold);
+}
